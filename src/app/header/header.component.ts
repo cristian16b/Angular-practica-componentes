@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   datos : any;
 
   constructor() { 
-    this.titulo = 'mi titulo';
+    this.titulo = 'soy un titulo o algo asi';
     this.datos = {'nombre': 'cristian','edad':29}
   }
 

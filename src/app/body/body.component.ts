@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  mensaje: string;
+
+  constructor() {
+    this.mensaje = 'estoy en el body';
+   }
 
   ngOnInit() {
   }
