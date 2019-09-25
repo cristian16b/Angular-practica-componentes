@@ -20,7 +20,10 @@
             <label for="edad">Edad</label>
             <input type="text" [(ngModel)]="datos.edad" class="form-control">
           </div>
-      <button type="button" (click)="eventoBoton()" class="btn btn-primary">CLICK ME</button>
+      <button type="button" *ngIf="!nombre;else desactivado" (click)="eventoBoton()" class="btn btn-primary">CLICK ME</button>
+    <ng-template #desactivado>
+        <button type="button"  (click)="eventoBoton()" class="btn btn-primary">CLICK ME</button>
+    </ng-template>
     </div>
     <div class="col-6">
       <div class="row">
