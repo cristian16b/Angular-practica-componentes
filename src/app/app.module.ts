@@ -7,7 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DirectivasComponent } from './directivas/directivas.component'
+import { DirectivasComponent } from './directivas/directivas.component';
+import { RenderComponent } from './render/render.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DirectivasComponent } from './directivas/directivas.component'
     HeaderComponent,
     FooterComponent,
     BodyComponent,
-    DirectivasComponent
+    DirectivasComponent,
+    RenderComponent
   ],
   imports: [
     BrowserModule,
