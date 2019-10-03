@@ -1,8 +1,8 @@
 <p>directivas works!</p>
-<tr *ngFor="let registro of registros">
-    <p>{{registro.name}} *** {{registro.secretIdentity}}</p>
-    <!-- {{registro.powers | json }}-->
+<tr *ngFor="let objeto of registros">
+    <p>{{objeto.name}} *** {{objeto.secretIdentity}}</p>
+    <!--{{objeto.powers | json }}-->
     <ul>
-        <li *ngFor="let poder in registro.powers">{{poder}}</li>
+        <li *ngFor="let poder of objeto.powers">{{poder}}</li>
     </ul>
 </tr>
