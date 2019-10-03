@@ -15,7 +15,8 @@ export class DirectivasComponent implements OnInit {
       "powers": [
         "Radiation resistance",
         "Turning tiny",
-        "Radiation blast"
+        "Radiation blast",
+        ""
       ]
     },
     {
@@ -24,6 +25,7 @@ export class DirectivasComponent implements OnInit {
       "secretIdentity": "Jane Wilson",
       "powers": [
         "Million tonne punch",
+        "",
         "Damage resistance",
         "Superhuman reflexes"
       ]

@@ -3,6 +3,13 @@
     <p>{{objeto.name}} *** {{objeto.secretIdentity}}</p>
     <!--{{objeto.powers | json }}-->
     <ul>
-        <li *ngFor="let poder of objeto.powers">{{poder}}</li>
+        <li *ngFor="let poder of objeto.powers">
+            <div *ngIf="poder !== '' else secuenciaAlternativa ">
+                {{poder}}
+            </div>
+        </li>
+        <ng-template #secuenciaAlternativa>
+            <b>no informado</b>
+        </ng-template>
     </ul>
 </tr>
