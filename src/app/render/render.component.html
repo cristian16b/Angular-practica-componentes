@@ -1,5 +1,8 @@
-<button id="botonagregar" type="button"   class="btn btn-primary">Agregar</button>
-<button type="button"  (click)="retornarColor()" class="btn btn-info">Borrar color</button>
+<button #botonNoHaceNada 
+        type="button"   
+        (mouseover)="molestoAlert()"
+        class="btn btn-primary">No hago nada</button>
+<button type="button" (click)="retornarColor()" class="btn btn-info">Borrar color</button>
 <div (click)="cambiarColor(miparrafo)" #miparrafo class="colorTextoOriginal">
     <h3>esto es un titulo</h3>
     <p>esto es algo asi como un parrafo.</p>
