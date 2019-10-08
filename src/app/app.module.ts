@@ -8,7 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivasComponent } from './directivas/directivas.component';
-import { RenderComponent } from './render/render.component'
+import { RenderComponent } from './render/render.component';
+import { PadreComponent } from './padre/padre.component';
+import { HijoComponent } from './hijo/hijo.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { RenderComponent } from './render/render.component'
     FooterComponent,
     BodyComponent,
     DirectivasComponent,
-    RenderComponent
+    RenderComponent,
+    PadreComponent,
+    HijoComponent
   ],
   imports: [
     BrowserModule,
