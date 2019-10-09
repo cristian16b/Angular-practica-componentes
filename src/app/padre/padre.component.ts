@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewChild } from '@angular/core';
+import { HijoComponent } from '../hijo/hijo.component';
 
 @Component({
   selector: 'app-padre',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PadreComponent implements OnInit {
 
+  @ViewChild(HijoComponent,{static:true}) hijo: HijoComponent;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  //
+  enviarMensaje() {
+    this.hijo.saludo('soy el padre');
   }
 
 }
