@@ -7,6 +7,7 @@
             | original {{objeto.sueldo}} - pipeleado {{ objeto.sueldo | number:'.1-2' }} 
             | {{objeto.apellido | slice:1:3}}
         </h4>
+        <p>{{objeto.apellido | concatenarApellidoNombre:objeto.nombre}}</p>
     </li>
 </ul>
 {{porcentaje | percent}}

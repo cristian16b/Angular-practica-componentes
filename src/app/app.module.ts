@@ -11,7 +11,8 @@ import { DirectivasComponent } from './directivas/directivas.component';
 import { RenderComponent } from './render/render.component';
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
-import { PipesComponent } from './pipes/pipes.component'
+import { PipesComponent } from './pipes/pipes.component';
+import { PruebapipePipe } from './pruebapipe.pipe'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PipesComponent } from './pipes/pipes.component'
     RenderComponent,
     PadreComponent,
     HijoComponent,
-    PipesComponent
+    PipesComponent,
+    PruebapipePipe
   ],
   imports: [
     BrowserModule,
