@@ -1,0 +1,14 @@
+<!-- <p>{{informacion | json}}</p> -->
+<b><i>prueba de uso de los pipes de angular</i></b>
+<ul>
+    <li *ngFor="let objeto of informacion">
+        <h4>{{objeto.nombre | uppercase }} 
+            | {{objeto.apellido  | lowercase | titlecase }} 
+            | original {{objeto.sueldo}} - pipeleado {{ objeto.sueldo | number:'.1-2' }} 
+            | {{objeto.apellido | slice:1:3}}
+        </h4>
+    </li>
+</ul>
+{{porcentaje | percent}}
+
+{{dinero|currency:'ARG':true:'.1-2'}}

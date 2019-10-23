@@ -10,7 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivasComponent } from './directivas/directivas.component';
 import { RenderComponent } from './render/render.component';
 import { PadreComponent } from './padre/padre.component';
-import { HijoComponent } from './hijo/hijo.component'
+import { HijoComponent } from './hijo/hijo.component';
+import { PipesComponent } from './pipes/pipes.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HijoComponent } from './hijo/hijo.component'
     DirectivasComponent,
     RenderComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
