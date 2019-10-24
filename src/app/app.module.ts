@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { Routes , RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,7 +12,19 @@ import { RenderComponent } from './render/render.component';
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
 import { PipesComponent } from './pipes/pipes.component';
-import { PruebapipePipe } from './pruebapipe.pipe'
+import { PruebapipePipe } from './pruebapipe.pipe';
+import { ComponenteAComponent } from './componente-a/componente-a.component';
+import { ComponentebComponent } from './componenteb/componenteb.component';
+import { ComponenteCComponent } from './componente-c/componente-c.component';
+import { ComponenteDetalleComponent } from './componente-detalle/componente-detalle.component';
+import { Route  } from '@angular/router';
+
+// defino las rutas que voy a usar
+const routes: Routes = [
+  {path: '',component: ComponenteDetalleComponent },
+  {path:'componentea',component: ComponenteAComponent},
+  {path:'componenteb',component: ComponentebComponent}
+];
 
 @NgModule({
   declarations: [
@@ -25,12 +37,17 @@ import { PruebapipePipe } from './pruebapipe.pipe'
     PadreComponent,
     HijoComponent,
     PipesComponent,
-    PruebapipePipe
+    PruebapipePipe,
+    ComponenteAComponent,
+    ComponentebComponent,
+    ComponenteCComponent,
+    ComponenteDetalleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
