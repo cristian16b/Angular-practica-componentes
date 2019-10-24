@@ -22,7 +22,7 @@ import { Route  } from '@angular/router';
 // defino las rutas que voy a usar
 const routes: Routes = [
   {path: '',component: ComponenteDetalleComponent },
-  {path:'componentea',component: ComponenteAComponent},
+  {path:'componentea/:id/:id2',component: ComponenteAComponent},
   {path:'componenteb',component: ComponentebComponent}
 ];
 
