@@ -13,6 +13,7 @@ export class ComponenteAComponent implements OnInit {
 
   ngOnInit() {
     this.rutaActiva.params.subscribe( params => {
+      console.log(params);
       if(params['id']){
         // console.log('llego');
         this.id = params['id'];
