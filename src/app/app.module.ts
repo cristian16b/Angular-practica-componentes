@@ -19,6 +19,7 @@ import { ComponenteCComponent } from './componente-c/componente-c.component';
 import { ComponenteDetalleComponent } from './componente-detalle/componente-detalle.component';
 import { Route  } from '@angular/router';
 import { FormularioComponent } from './formulario/formulario.component';
+import { PruebaServiciosComponent } from './prueba-servicios/prueba-servicios.component';
 
 // defino las rutas que voy a usar
 const routes: Routes = [
@@ -43,7 +44,8 @@ const routes: Routes = [
     ComponentebComponent,
     ComponenteCComponent,
     ComponenteDetalleComponent,
-    FormularioComponent
+    FormularioComponent,
+    PruebaServiciosComponent
   ],
   imports: [
     BrowserModule,
