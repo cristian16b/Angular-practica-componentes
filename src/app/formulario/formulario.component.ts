@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup,FormBuilder,Validator, Validators} from '@angular/forms';
+import {FormGroup,FormBuilder,Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-formulario',
@@ -12,23 +12,27 @@ export class FormularioComponent implements OnInit {
   formulario: FormGroup;
 
   constructor(private formBuilder: FormBuilder) { 
-    this.formulario = this.formBuilder.group({
-      nombre: ['NO INFORMADO',Validators.required],
-      apellido: ['NO INFORMADO',Validators.required],
-      email: ['solicitar@solicitar.com',
-        [
-          Validators.required,
-          Validators.pattern("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$")
-        ]
-      ],
-    });
   }
 
   ngOnInit() {
+    this.formulario = this.formBuilder.group({
+      nombre: ['',[
+        Validators.required,
+        Validators.minLength(3)
+      ]],
+      apellido: ['',Validators.required],
+      correo: ['',
+        [
+          Validators.pattern('^[^@]+@[^@]+\.[a-zA-Z]{2,}$'),
+          Validators.required
+        ]],
+      }
+    );
   }
 
   onSubmit(formulario) {
     console.log(formulario);
+    alert('se mando');
   }
 
 }
