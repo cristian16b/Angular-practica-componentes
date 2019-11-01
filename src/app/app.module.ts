@@ -20,6 +20,7 @@ import { ComponenteDetalleComponent } from './componente-detalle/componente-deta
 import { Route  } from '@angular/router';
 import { FormularioComponent } from './formulario/formulario.component';
 import { PruebaServiciosComponent } from './prueba-servicios/prueba-servicios.component';
+import { ProductosService } from './servicio/productos.service';
 
 // defino las rutas que voy a usar
 const routes: Routes = [
@@ -54,7 +55,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [ProductosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

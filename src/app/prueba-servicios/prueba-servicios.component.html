@@ -1,1 +1,17 @@
-<p>prueba-servicios works!</p>
+<p>listado de productos</p>
+<table>
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>marca</td>
+            <td>nombre</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let producto of productos">
+            <td>{{producto.id}}</td>
+            <td>{{producto.value.marca}}</td>
+            <td>{{producto.value.nombre}}</td>
+        </tr>
+    </tbody>
+</table>
