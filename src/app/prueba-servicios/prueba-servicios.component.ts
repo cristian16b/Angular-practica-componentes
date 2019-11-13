@@ -10,10 +10,11 @@ export class PruebaServiciosComponent implements OnInit {
 
   productos: any;
   constructor(private productosLista:ProductosService) { 
-    this.productos = productosLista.productos.rows;
+    // this.productos = this.productosLista.retornarProductos();
   }
 
   ngOnInit() {
+      this.productos = this.productosLista.retornarProductos();
   }
 
 }

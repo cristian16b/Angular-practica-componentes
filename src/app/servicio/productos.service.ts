@@ -5,6 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class ProductosService {
 
+  retornarProductos() {
+    return this.productos.rows;
+  }
+
   productos: any = {"total_rows":6302,"offset":0,"rows":[
     {"id":"producto-0000000090100","key":"producto-0000000090100","value":{"_id":"producto-0000000090100","_rev":"2-024547d9efe755e7c9cb3d7298bb7e0f","uuid":"producto-0000000090100","marca":"SCHNEIDER","nombre":"Cerveza Botella Schneider x 1 Un","presentacion":"1.0 un"}},
     {"id":"producto-0000000135559","key":"producto-0000000135559","value":{"_id":"producto-0000000135559","_rev":"1-9526b0c155107518166a86592884ac4f","nombre":"REJILLA COMPACTA COL","uuid":"producto-0000000135559","marca":"SIN MARCA","presentacion":"1.0 ud"}},
