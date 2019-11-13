@@ -21,6 +21,7 @@ import { Route  } from '@angular/router';
 import { FormularioComponent } from './formulario/formulario.component';
 import { PruebaServiciosComponent } from './prueba-servicios/prueba-servicios.component';
 import { ProductosService } from './servicio/productos.service';
+import { ConsumirRestComponent } from './consumir-rest/consumir-rest.component';
 
 // defino las rutas que voy a usar
 const routes: Routes = [
@@ -46,7 +47,8 @@ const routes: Routes = [
     ComponenteCComponent,
     ComponenteDetalleComponent,
     FormularioComponent,
-    PruebaServiciosComponent
+    PruebaServiciosComponent,
+    ConsumirRestComponent
   ],
   imports: [
     BrowserModule,
