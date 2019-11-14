@@ -21,7 +21,9 @@ import { Route  } from '@angular/router';
 import { FormularioComponent } from './formulario/formulario.component';
 import { PruebaServiciosComponent } from './prueba-servicios/prueba-servicios.component';
 import { ProductosService } from './servicio/productos.service';
+import { PersonaService } from './servicio/persona.service';
 import { ConsumirRestComponent } from './consumir-rest/consumir-rest.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // defino las rutas que voy a usar
 const routes: Routes = [
@@ -55,9 +57,10 @@ const routes: Routes = [
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
-  providers: [ProductosService],
+  providers: [ProductosService,PersonaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

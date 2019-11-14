@@ -1,1 +1,45 @@
-<p>consumir-rest works!</p>
+<div class="row">
+    <h3>datos traidos del ws</h3><br>
+<table>
+    <thead>
+        <tr>
+            <td>nombre</td>
+            <td>edad</td>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- aqui se van a insertar las filas con la info del ws -->
+        <tr *ngFor="let persona of personas">
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.edad}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="row">
+    <br>
+    <!-- aqui va el formulario de nueva persona -->
+    <h3>formulario de alta de persona</h3>
+    <br>
+    <!-- <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input formControlName="nombre" type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+    </div> -->
+    <br>
+    <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+</div>

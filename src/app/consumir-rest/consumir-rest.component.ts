@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonaService } from '../servicio/persona.service';
 
 @Component({
   selector: 'app-consumir-rest',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsumirRestComponent implements OnInit {
 
-  constructor() { }
+  constructor(private listaPersonas:PersonaService) { }
 
   ngOnInit() {
   }
