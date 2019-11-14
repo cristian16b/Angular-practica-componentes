@@ -8,9 +8,10 @@ import { PersonaService } from '../servicio/persona.service';
 })
 export class ConsumirRestComponent implements OnInit {
 
+  personas: any = [];
   constructor(private listaPersonas:PersonaService) { }
 
   ngOnInit() {
+    this.personas = this.listaPersonas.obtenerPersonas();
   }
-
 }
