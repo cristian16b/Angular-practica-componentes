@@ -1,5 +1,6 @@
 <div class="row">
     <h3>datos traidos del ws</h3><br>
+    {{personas | async | json}}
 <table>
     <thead>
         <tr>
@@ -10,26 +11,20 @@
         </tr>
     </thead>
     <tbody>
-        {{personas | async | json}}
         <!-- aqui se van a insertar las filas con la info del ws -->
-        <!-- <tr *ngFor="let persona of personas | async">
+        <tr *ngFor="let persona of personas">
             <td>{{persona.name}}</td>
             <td>{{persona.surname}}</td>
             <td>{{persona.gender}}</td>
             <td>{{persona.region}}</td>
-        </tr> -->
+        </tr>
     </tbody>
 </table>
 </div>
 <div class="row">
     <br>
-    <!-- aqui va el formulario de nueva persona -->
-    <h3>formulario de alta de persona</h3>
+    <!-- <h3>formulario de alta de persona</h3>
     <br>
-    <!-- <div class="form-group">
-        <label for="nombre">Nombre</label>
-        <input formControlName="nombre" type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-    </div> -->
     <br>
     <form>
             <div class="form-group">
@@ -46,5 +41,5 @@
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+          </form> -->
 </div>
