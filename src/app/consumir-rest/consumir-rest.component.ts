@@ -36,3 +36,6 @@ export class ConsumirRestComponent implements OnInit {
 /*
 https://codeday.me/es/qa/20190610/844542.html
 */
+
+// esta generando el siguiente error
+// 
