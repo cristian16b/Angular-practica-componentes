@@ -1,3 +1,6 @@
 {
- { "id": 1, "title": "Post 1" }
+	"persona": [{
+		"id": 1,
+		"title": "Post 1"
+	}]
 }
