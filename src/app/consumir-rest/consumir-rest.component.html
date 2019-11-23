@@ -1,22 +1,24 @@
 <div class="row">
     <h3>datos traidos del ws</h3><br>
-    {{personas  | json}}
+    {{  personas |async | json  }}
 <table>
     <thead>
         <tr>
             <td>nombre</td>
             <td>apellido</td>
             <td>sexo</td>
-            <td>region</td>
         </tr>
     </thead>
     <tbody>
         <!-- aqui se van a insertar las filas con la info del ws -->
-        <tr *ngFor="let persona of personas">
-            <td>{{persona.name}}</td>
+        <tr *ngFor="let persona of (personas|async)">
+            <!-- <td>{{persona.name}}</td>
             <td>{{persona.surname}}</td>
             <td>{{persona.gender}}</td>
-            <td>{{persona.region}}</td>
+            <td>{{persona.region}}</td> -->
+            <td>{{persona.codigo}}</td>
+            <td>{{persona.descripcion}}</td>
+            <td>{{persona.precio}}</td>
         </tr>
     </tbody>
 </table>
