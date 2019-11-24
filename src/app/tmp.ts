@@ -3,8 +3,10 @@ export interface Idata{
     // Id:number;
     // title:string;
     // body:string;
-    codigo:number,
-    descripcion:string,
-    precio:number
+    // codigo:number,
+    // descripcion:string,
+    // precio:number
+    id:number;
+    title:string;
   }
   

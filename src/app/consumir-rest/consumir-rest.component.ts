@@ -39,13 +39,11 @@ export class ConsumirRestComponent implements OnInit {
     //     }
     // );
     this.personas = this.listaPersonas.obtenerPersonas();
-    console.log(this.personas);
+    // console.log(this.personas);
   }
 }
 
 /*
+notas sobre async
 https://codeday.me/es/qa/20190610/844542.html
 */
-
-// esta generando el siguiente error
-// 
