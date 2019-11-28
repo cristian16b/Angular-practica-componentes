@@ -24,6 +24,8 @@ import { ProductosService } from './servicio/productos.service';
 import { PersonaService } from './servicio/persona.service';
 import { ConsumirRestComponent } from './consumir-rest/consumir-rest.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 // defino las rutas que voy a usar
 const routes: Routes = [
@@ -58,7 +60,9 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot() 
   ],
   providers: [ProductosService,PersonaService],
   bootstrap: [AppComponent]
