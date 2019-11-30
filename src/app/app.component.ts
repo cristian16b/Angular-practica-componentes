@@ -19,6 +19,22 @@ export class AppComponent {
   }
 
   showSuccess() {
-    this.toastr.success('Hello world!', 'Toastr fun!');
+    // referencia de los mensajes emergentes
+    // https://www.npmjs.com/package/ngx-toastr
+    this.toastr.success('succes!', 'Toastr fun!',{
+      closeButton: true
+    });
+    this.toastr.info('info!', 'Toastr fun!',{
+      closeButton: true
+    });
+    this.toastr.warning('warning!', 'Toastr fun!',{
+      closeButton: true
+    });
+    this.toastr.show('shor!', 'Toastr fun!',{
+      closeButton: true
+    });
+    this.toastr.error('everything is broken', 'Major Error', {
+      timeOut: 3000
+    });
   }
 } 
