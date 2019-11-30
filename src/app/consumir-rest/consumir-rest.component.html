@@ -12,7 +12,8 @@
     <tbody>
         <!-- aqui se van a insertar las filas con la info del ws -->
         <!-- ref: https://stackoverflow.com/questions/54044639/angular-6-cannot-find-a-differ-supporting-object-object-object-of-type-ob -->
-        <tr *ngFor="let persona of (personas|async)?.persona">
+        <!-- <tr *ngFor="let persona of (personas|async)?.persona"> -->
+            <tr *ngFor="let persona of (personas|async)">
             <!-- <td>{{persona.name}}</td>
             <td>{{persona.surname}}</td>
             <td>{{persona.gender}}</td>
